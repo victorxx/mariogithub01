@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="conteúdo, humor, notícias, curiosidades, Mario, jogos, entretenimento online">
+    <meta name="description" content="Confira o melhor conteúdo de humor e curiosidades com uma pitada de entretenimento inspirado no universo do Mario. Notícias interessantes, diversão e conteúdo de qualidade.">
+    <title>Melhor Conteúdo de Humor, Curiosidades e Entretenimento com Mario</title>
+
+    <!-- Meta Open Graph para redes sociais -->
+    <meta property="og:title" content="Conteúdo de Humor e Curiosidades com Mario">
+    <meta property="og:description" content="O melhor conteúdo de humor e notícias com um toque divertido do universo Mario.">
+    <meta property="og:type" content="website">
+  
+    <meta property="og:image" content="https://i.pinimg.com/originals/3c/f4/42/3cf442eb0574a06127a2db3a6bd6e633.gif">
+
+
+<html lang="pt-br">
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            .gameborder{
+                border:1px solid orange;
+                width: 500px;
+                height: 300px;
+                align-items: center;
+                flex-direction: column;
+                display: flex;
+                left: 420px;
+                position: relative;
+                overflow: hidden;
+
+            }
+            .pipe{
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                bottom: 0;
+                animation:animacaopipe 10s infinite;
+            }
+            .mario{
+                position: absolute;
+                bottom: 0;
+                width:150px;
+                animation:pular 2s infinite;
+                left:0;
+            }
+            @keyframes pular{
+                0%{
+                    bottom: 0;
+                }
+                20%{
+                    bottom:200px;
+                }
+                50%{
+                    bottom: 200px;
+                }
+                80%{
+                    bottom:50px;
+                }
+                100%{
+                    bottom: 0;
+                }
+            }
+            @keyframes animacaopipe{
+                from{
+                    right: -80%;
+                }
+                to{
+                    right: 100%;
+                }
+            }
+            #conteudo{
+                position: relative;
+                width: 50%;
+                font-size: 50px;
+                color:white;
+                text-align: center;
+                left: 300px;
+            }
+
+
+
+
+
+
+
+        
+            @media (max-width: 900px) {
+    .gameborder {
+        width: 90%;
+        left: 0;
+    }
+
+    #conteudo {
+        width: 90%;
+        left: 0;
+        font-size: 24px;
+    }
+
+    .mario {
+        width: 80px;
+    }
+
+    .pipe {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+        h2{
+            color:white;
+            font-size: 50px;
+        }   
+            
+        </style>
+    </head>
+
+        <div id="transforma">
+        <h2>ATUALIZADO TODA HORA</h2>
+        <h2><a href='https://victorxx.github.io/videosgihb01/'>CONFERIR</a></h2>
+    <div class="gameborder">
+   <img src="https://cdn.pixabay.com/photo/2013/07/12/13/52/super-mario-brothers-147465_960_720.png" class="pipe">
+   <img src="https://i.pinimg.com/originals/3c/f4/42/3cf442eb0574a06127a2db3a6bd6e633.gif"class='mario'>
+    </div>
+    <div id="conteudo">
+
+    </div>
+    </div>
+
+    <script>
+      const conteudos=[
+        `
+        Fortes chuvas atingiram o Rio durante a noite de quarta-feira, com três mortes confirmadas: duas em Guaratiba devido ao desabamento de uma casa e uma vítima na Rocinha por deslizamento. Além disso, dois ônibus na Avenida Niemeyer — que liga Leblon a São Conrado — ficaram soterrados e uma ciclovia desabou no mar. A cidade está em estágio de crise desde então.
+        `
+      ];
+     conteudos.forEach(informaca=>{
+     const paragrafo=document.createElement('h5');
+     paragrafo.textContent=informaca;
+     document.getElementById('conteudo').appendChild(paragrafo);
+     });
+    </script>
+</html>
